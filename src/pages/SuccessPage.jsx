@@ -16,7 +16,6 @@ const FailedPage = () => {
           <div className="w-60 h-60 bg-white rounded-full mb-10 overflow-hidden">
             <img src="/Success.png" alt="" className="w-full h-full object-cover" />
           </div>
-
           <h1 className="text-3xl md:text-4xl font-bold text-black mb-2">
             Thank You For Registering!
           </h1>
