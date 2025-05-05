@@ -11,8 +11,7 @@ export default function RegisterForm() {
           <h2 className="text-2xl font-bold mb-6">Personal Details</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <input type="text" placeholder="Enter your first name ......" className="bg-white p-3 rounded-md shadow" />
-            <input type="text" placeholder="Enter your last name ......" className="bg-white p-3 rounded-md shadow" />
+            <input type="text" placeholder="Enter your full name ......" className="bg-white p-3 rounded-md shadow" />
             <input type="text" placeholder="Enter your phone number ......" className="bg-white p-3 rounded-md shadow" />
 
             <input type="email" placeholder="Enter your email ......" className="bg-white p-3 rounded-md shadow" />
