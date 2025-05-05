@@ -18,8 +18,8 @@ export default function RegisterForm() {
                         <input type="number" placeholder="Enter your phone number ......" className="bg-white p-3 rounded-md shadow" />
 
                         <input type="email" placeholder="Enter your email ......" className="bg-white p-3 rounded-md shadow" />
-                        <input type="date" placeholder="DD - MM - YYYY" className="bg-white p-3 rounded-md shadow" />
-                        <select className="p-3 rounded-md shadow bg-white">
+                        <input type="date" placeholder="DD - MM - YYYY" className="bg-white p-3 rounded-md shadow appearance-none" />
+                        <select className="p-3 rounded-md shadow bg-white appearance-none">
                             <option>Select your preferred course ......</option>
                             <option>Select your preferred course ......</option>
                             <option>Select your preferred course ......</option>
