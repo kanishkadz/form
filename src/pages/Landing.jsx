@@ -1,115 +1,42 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function RegisterForm() {
+const Landing = () => {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center flex flex-col items-center py-10"
+      className="relative bg-cover bg-center min-h-screen flex items-center justify-center p-8"
       style={{ backgroundImage: "url('/BG.jpg')" }}
     >
       <div className="absolute inset-0 backdrop-blur-sm bg-black/30 z-0"></div>
-
-      <div className="relative z-10 w-full max-w-6xl bg-white border-4 border-gray-200 shadow-lg">
-        <div className="bg-purple-800 text-white py-4 px-6 text-center text-xl font-bold">
-          REGISTER YOURSELF
+      <div className="relative z-10 bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-5xl overflow-hidden border-[8px] border-[#FEA82F]">
+        <div className="md:w-1/2 p-8">
+          <h2 className="text-4xl font-bold text-black mb-4">Lorem ipsum</h2>
+          <p className="text-black text-base leading-relaxed mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+            illo nesciunt blanditiis! Eligendi, rem. Minima natus totam
+            aspernatur perferendis. Totam, veritatis nostrum! Autem, eum. Ipsum
+            corporis cumque molestiae id vero, consequuntur voluptates
+            doloribus tenetur aut? Deleniti provident, quasi corrupti expedita,
+            labore id, similique doloribus distinctio pariatur nisi rem totam
+            optio.
+          </p>
+          <Link to="/register">
+            <button className="bg-[#27187E] hover:bg-[#131325] text-white px-6 py-3 rounded-full font-semibold transition">
+              ENROLL ME IN
+            </button>
+          </Link>
         </div>
-        <div className="bg-orange-400 p-8">
-          <h2 className="text-2xl font-bold mb-6">Personal Details</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <input
-              type="text"
-              placeholder="Enter your full name ......"
-              className="bg-white p-3 rounded-md shadow"
-            />
-            <input
-              type="number"
-              placeholder="Enter your phone number ......"
-              className="bg-white p-3 rounded-md shadow"
-            />
-            <input
-              type="email"
-              placeholder="Enter your email ......"
-              className="bg-white p-3 rounded-md shadow"
-            />
-            <input
-              type="date"
-              className="bg-white p-3 rounded-md shadow appearance-none"
-            />
-            <select className="p-3 rounded-md shadow bg-white appearance-none">
-              <option>Select your preferred course ......</option>
-              <option>Cybersecurity</option>
-              <option>Data Science</option>
-              <option>Cloud Computing</option>
-              <option>AI/ML</option>
-            </select>
-            <input
-              type="text"
-              placeholder="Enter your address ......"
-              className="bg-white p-3 rounded-md shadow"
-            />
-            <select className="bg-white p-3 rounded-md shadow appearance-none">
-              <option>Select your State ......</option>
-              <option>West Bengal</option>
-              <option>Karnataka</option>
-              <option>Maharashtra</option>
-              <option>Delhi</option>
-            </select>
-            <select className="bg-white p-3 rounded-md shadow appearance-none">
-              <option>Select your Country ......</option>
-              <option>India</option>
-              <option>USA</option>
-              <option>Canada</option>
-              <option>Australia</option>
-            </select>
-
-            <div className="relative">
-              <input
-                type="file"
-                className="bg-white p-3 rounded-md shadow w-full opacity-0 absolute top-0 left-0"
-                id="file-upload"
-              />
-              <label
-                htmlFor="file-upload"
-                className="cursor-pointer bg-gray-200 p-3 rounded-md shadow w-full flex items-center justify-center text-gray-500"
-              >
-                Upload documents
-              </label>
-            </div>
-          </div>
-
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
-              <label className="block font-semibold mb-1">Who are you?</label>
-              <div className="space-x-4">
-                <label>
-                  <input type="radio" name="identity" className="mr-1" /> Individual
-                </label>
-                <label>
-                  <input type="radio" name="identity" className="mr-1" /> Student/Professional
-                </label>
-              </div>
-            </div>
-            <div>
-              <label className="block font-semibold mb-1">Payment</label>
-              <label>
-                <input type="radio" name="payment" className="mr-1" /> Proceed to Payment
-              </label>
-            </div>
-          </div>
-
-          <div className="mt-10 flex justify-end space-x-4">
-            <button className="bg-yellow-300 text-black px-6 py-2 rounded-full shadow">
-              Payment
-            </button>
-            <button className="bg-white border border-black px-6 py-2 rounded-full shadow">
-              Save and Preview
-            </button>
-            <button className="bg-purple-800 text-white px-6 py-2 rounded-full shadow">
-              Save and Continue
-            </button>
-          </div>
+        <div className="md:w-1/2 bg-white flex items-center justify-center p-8">
+          <img
+            src="/Illustration.png"
+            alt="Illustration"
+            className="max-h-[500px]"
+          />
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Landing;

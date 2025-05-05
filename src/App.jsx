@@ -5,6 +5,7 @@ import RegisterForm from './pages/RegisterForm'
 import Landing from './pages/Landing'
 import SuccessPage from './pages/SuccessPage'
 import FailedPage from './pages/FailedPage'
+import ViewForm from './pages/ViewForm'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/failed" element={<FailedPage />} />
+        <Route path="/viewform" element={<ViewForm />} />
       </Routes>
     </Router>
   )
