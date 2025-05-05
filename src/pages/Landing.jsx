@@ -2,9 +2,10 @@ import React from "react";
 
 const CybersecurityCourse = () => {
   return (
-    <div className="bg-[#f7941d] min-h-screen flex items-center justify-center p-8">
+    <div className="bg-[#f7941d] min-h-screen flex items-center justify-center p-8"
+    style={{ backgroundImage: "url('/BG.jpg')" }}
+    >
       <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-5xl overflow-hidden border-[8px] border-[#f7941d]">
-        {/* Left Section */}
         <div className="md:w-1/2 p-8">
           <h2 className="text-4xl font-bold text-black mb-4">Cybersecurity</h2>
           <p className="text-black text-base leading-relaxed mb-6">
@@ -20,10 +21,9 @@ const CybersecurityCourse = () => {
           </button>
         </div>
 
-        {/* Right Section - Illustration */}
         <div className="md:w-1/2 bg-white flex items-center justify-center p-8">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/8074/8074914.png" // Placeholder: Use your own image or asset
+            src="/Illustration.png"
             alt="Illustration"
             className="max-h-60"
           />
