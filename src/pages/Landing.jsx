@@ -7,10 +7,7 @@ const CybersecurityCourse = () => {
       className="relative bg-cover bg-center min-h-screen flex items-center justify-center p-8"
       style={{ backgroundImage: "url('/BG.jpg')" }}
     >
-      {/* Blur + Overlay */}
       <div className="absolute inset-0 backdrop-blur-sm bg-black/30 z-0"></div>
-
-      {/* Content */}
       <div className="relative z-10 bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-5xl overflow-hidden border-[8px] border-[#f7941d]">
         <div className="md:w-1/2 p-8">
           <h2 className="text-4xl font-bold text-black mb-4">Cybersecurity</h2>
