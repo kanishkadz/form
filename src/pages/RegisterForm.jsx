@@ -4,7 +4,7 @@ export default function RegisterForm() {
     return (
         <div
             className="min-h-screen bg-cover bg-center flex flex-col items-center py-10"
-            style={{ backgroundImage: "url('/BG.png')" }}
+            style={{ backgroundImage: "url('/BG.jpg')" }}
         >
             <div className="w-full max-w-6xl bg-white border-4 border-gray-200 shadow-lg">
                 <div className="bg-purple-800 text-white py-4 px-6 text-center text-xl font-bold">
@@ -15,25 +15,46 @@ export default function RegisterForm() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <input type="text" placeholder="Enter your full name ......" className="bg-white p-3 rounded-md shadow" />
-                        <input type="text" placeholder="Enter your phone number ......" className="bg-white p-3 rounded-md shadow" />
+                        <input type="number" placeholder="Enter your phone number ......" className="bg-white p-3 rounded-md shadow" />
 
                         <input type="email" placeholder="Enter your email ......" className="bg-white p-3 rounded-md shadow" />
-                        <input type="text" placeholder="DD - MM - YYYY" className="bg-white p-3 rounded-md shadow" />
+                        <input type="date" placeholder="DD - MM - YYYY" className="bg-white p-3 rounded-md shadow" />
                         <select className="p-3 rounded-md shadow bg-white">
+                            <option>Select your preferred course ......</option>
+                            <option>Select your preferred course ......</option>
+                            <option>Select your preferred course ......</option>
+                            <option>Select your preferred course ......</option>
                             <option>Select your preferred course ......</option>
                         </select>
 
                         <input type="text" placeholder="Enter your address ......" className="bg-white p-3 rounded-md shadow" />
-                        <select className="bg-white p-3 rounded-md shadow">
+                        <select className="bg-white p-3 rounded-md shadow appearance-none">
+                            <option>Select your State ......</option>
+                            <option>Select your State ......</option>
+                            <option>Select your State ......</option>
+                            <option>Select your State ......</option>
                             <option>Select your State ......</option>
                         </select>
-                        <select className="bg-white p-3 rounded-md shadow">
+                        <select className="bg-white p-3 rounded-md shadow appearance-none">
                             <option>Select your Country ......</option>
                         </select>
 
-                        <select className="bg-white p-3 rounded-md shadow">
-                            <option>Select file ......</option>
-                        </select>
+
+                        <div className="relative">
+                            <input
+                                type="file"
+                                className="bg-white p-3 rounded-md shadow w-full opacity-0 absolute top-0 left-0"
+                                id="file-upload"
+                            />
+                            <label
+                                htmlFor="file-upload"
+                                className="cursor-pointer bg-gray-200 p-3 rounded-md shadow w-full flex items-center justify-center text-gray-500"
+                            >
+                                Upload documents
+                            </label>
+                        </div>
+
+
                     </div>
 
                     <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
