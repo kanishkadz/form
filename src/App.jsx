@@ -1,7 +1,10 @@
-function App() {
+import React from 'react'
+import RegisterForm from './pages/RegisterForm'
+
+const App = () => {
   return (
     <div>
-      Kanishka
+      <RegisterForm />
     </div>
   )
 }
