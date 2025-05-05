@@ -15,7 +15,7 @@ const FailedPage = () => {
         <div className="flex flex-col items-center justify-center bg-[#FEA82F] px-6 py-16">
           <div className="w-40 h-40 bg-white rounded-full mb-10"></div>
           <h1 className="text-3xl md:text-4xl font-bold text-black mb-2">
-            Thank You For Registering
+            Thank You For Registering!
           </h1>
           <p className="text-black text-lg text-center">
             Payment is successfull, Your response have <br />
